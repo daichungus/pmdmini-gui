@@ -19,15 +19,23 @@ GUI player for PC-98 PMD music files (.M/.M2/.M26/.M86) on Windows and Linux
 
 ## Building
 
-You can get the binary from the release page ! You don't have to build it manually.
+You can get the binary from the release page and don't have to build it manually.
 
 ### Linux
 
-**Dependencies:**
+**Dependencies**
+
+**Debian:**
 ```bash
 sudo apt-get install cmake ninja-build g++ \
   libsdl2-dev libgl1-mesa-dev libasound2-dev \
   libx11-dev libxrandr-dev libxinerama-dev libxcursor-dev libxi-dev
+```
+**Fedora:**
+```bash
+sudo dnf install cmake ninja-build gcc-c++ \
+  SDL2-devel mesa-libGL-devel alsa-lib-devel \
+  libX11-devel libXrandr-devel libXinerama-devel libXcursor-devel libXi-devel
 ```
 
 **Build:**
@@ -39,7 +47,7 @@ cmake --build build
 
 ### Windows (MinGW-w64)
 
-**Dependencies:**
+**Dependencies**
 
 1. Install [MSYS2](https://www.msys2.org/)
 2. Open MSYS2 MinGW64 terminal and install dependencies:
